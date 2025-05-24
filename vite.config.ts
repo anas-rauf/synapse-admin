@@ -7,6 +7,14 @@ export default defineConfig({
   build: {
     target: "esnext",
   },
+  server: {
+    host: "0.0.0.0",
+    port: 5173,
+  },
+  preview: {
+    host: "0.0.0.0",
+    port: 5173,
+  },
   plugins: [
     react(),
     vitePluginVersionMark({
